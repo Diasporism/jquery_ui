@@ -1,0 +1,69 @@
+<div class="text-center">
+  <h1>JQuery UI</h1>
+  <h2></h2>
+  <%= link_to 'API Documentation', 'http://api.jqueryui.com/' %>
+</div>
+<br>
+<div class="row">
+  <div class="span3" id="box_blind">
+    <%= image_tag('http://placehold.it/100/100&text=blind') -%>
+  </div>
+  <div class="span3" id="box_bounce">
+    <%= image_tag('http://placehold.it/100/100&text=bounce') -%>
+  </div>
+  <div class="span3" id="box_drop">
+    <%= image_tag('http://placehold.it/100/100&text=drop') -%>
+  </div>
+  <div class="span3" id="box_explode">
+    <%= image_tag('http://placehold.it/100/100&text=explode') -%>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="span3" id="box_fade">
+    <%= image_tag('http://placehold.it/100/100&text=fade') -%>
+  </div>
+  <div class="span3" id="box_fold">
+    <%= image_tag('http://placehold.it/100/100&text=fold') -%>
+  </div>
+  <div class="span3" id="box_highlight">
+    <%= image_tag('http://placehold.it/100/100&text=highlight') -%>
+  </div>
+  <div class="span3" id="box_shake">
+    <%= image_tag('http://placehold.it/100/100&text=shake') -%>
+  </div>
+</div>
+
+<script>
+    $( '#box_blind' ).click(function() {
+        $( "#box_blind" ).effect( "blind" );
+    });
+
+    $( '#box_bounce' ).click(function() {
+        $( "#box_bounce" ).toggle( "bounce" );
+    });
+
+    $( '#box_drop' ).click(function() {
+        $( "#box_drop" ).toggle( "drop" );
+    });
+
+    $( '#box_explode' ).click(function() {
+        $( "#box_explode" ).toggle( "explode" );
+    });
+
+    $( '#box_fade' ).click(function() {
+        $( "#box_fade" ).toggle( "fade" );
+    });
+
+    $( '#box_fold' ).click(function() {
+        $( "#box_fold" ).toggle( "fold" );
+    });
+
+    $( '#box_highlight' ).click(function() {
+        $( "#box_highlight" ).toggle( "highlight" );
+    });
+
+    $( '#box_shake' ).click(function() {
+        $( "#box_shake" ).toggle( "shake" );
+    });
+</script>

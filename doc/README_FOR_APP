@@ -1,2 +1,5 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+This is a simple project I created to learn JQuery UI.
+
+There are 8 different effects you can trigger on the home page. Just click the black boxes. Refresh the page to get them back.
+
+It also shows a real world example for when you might combine these effects to create a pleasant user experience during account creation and login.
