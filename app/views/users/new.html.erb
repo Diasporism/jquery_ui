@@ -1,11 +1,6 @@
 <div class="row">
   <div class="form span4">
     <%= simple_form_for :user, :url => users_path, method: 'POST' do |f| %>
-        <% if @user.errors.any? %>
-            <script>
-                $( "#main" ).effect( "shake", { times: (3), duration: (800) });
-            </script>
-        <% end %>
         <%= f.input :username %>
         <%= f.input :password %>
         <%= f.input :password_confirmation %>
@@ -13,11 +8,3 @@
     <% end %>
   </div>
 </div>
-
-<script>
-    $('.form').submit(function() {
-        $( "#main" ).toggle( "drop", { direction: ("up") });
-    });
-</script>
-
-

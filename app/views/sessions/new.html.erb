@@ -1,21 +1,9 @@
 <div class="row">
   <div class="form span4">
     <%= simple_form_for @session, :url => sessions_path, method: 'POST' do |f| %>
-        <% if @session.errors.any? %>
-            <script>
-                $( "#main" ).effect( "shake", { times: (3), duration: (800) });
-            </script>
-        <% end %>
         <%= f.input :username %>
         <%= f.input :password %>
         <%= f.button :submit, value: 'Login'%>
     <% end %>
   </div>
 </div>
-
-<script>
-  $('.form').submit(function() {
-      $( "#main" ).toggle( "drop", { direction: ("up") });
-  });
-</script>
-
